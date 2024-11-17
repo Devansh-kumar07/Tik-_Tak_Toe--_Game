@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #E0E0E0;
+}
+
+#heading1 {
+    color: #E0E0E0;
+    font-size: 2.5rem;
+    margin: 1rem 0;
+    letter-spacing: 2px;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+    background-color: #1E1E1E;
+    border-radius: 1rem;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+    padding: 1vmin;
+}
+
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    font-size: 8vmin;
+    font-weight: bold;
+    color: #03DAC5;
+    background-color: #242424;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.box:hover {
+    background-color: #333333;
+    transform: scale(1.1);
+}
+
+#reset-btn,
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    background-color: #333333;
+    color: #E0E0E0;
+    border-radius: 1rem;
+    border: 1px solid #444;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+    background-color: #444444;
+    transform: scale(1.1);
+}
+
+#msg {
+    color: #03DAC5;
+    font-size: 8vmin;
+}
+
+.msg-container {
+    height: 80vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.hide {
+    display: none;
+}
